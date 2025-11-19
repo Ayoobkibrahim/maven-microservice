@@ -7,7 +7,7 @@ import java.net.InetSocketAddress;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        int port = 8082;
+        int port = 3002;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/profiles", new ProfileHandler());
         server.start();

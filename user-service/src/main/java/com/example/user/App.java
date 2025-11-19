@@ -10,7 +10,7 @@ import java.io.OutputStream;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        int port = 8081;
+        int port = 3001;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/users", new UserHandler());
         server.start();
